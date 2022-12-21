@@ -1,18 +1,22 @@
-n=100 % 3
-nDue=100 % 5
-nVal=n.value
-nDue=nDue.value
-nDueVal=nDue   
-for(let i=0 ; i<=100;i++){
-    if(nVal==n){
+for(let i=1 ; i<=100;i++){
+    console.log( i)
+    if(i % 3==0){
         console.log("scrivo buzz")
+        
     }
-    // else if(multipli 3 && multi 5 ){
-//  console.log("scrivo fizzbuzz")
-    // }
-    // else if(multi 5){
-// console.log("scrivo fizz")
-    // }
+    else if(i % 3==0 && i % 5==0){
+        console.log("scrivo fizzbuzz")
+        
+    }
+    else if( i % 5==0){
+        console.log("scrivo fizz")
+        
+    }
+    
+
+    
+    
+    
 }
     
     
