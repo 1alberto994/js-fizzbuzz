@@ -5,25 +5,27 @@ for(let i=1 ; i<=100;i++){
     newP.innerHTML=`${i}`;
     newP.className=`box${i}`;
     div.append(newP)
-    document.getElementById("quadrato").style.backgroundColor="aqua"
+    document.querySelector(`.box${i}`).style.backgroundColor="aqua"
     // div.innerHTML+=element
     console.log( i)
     if(i % 3==0){
-        const newPdue=document.createElement("p")
-        newPdue.innerHTML=`${i % 3==0}`;
-        newPdue.className=`box${i % 3==0}`
+        
+        newP.innerHTML="Fizz";
+        
         console.log("scrivo buzz")
-        document.getElementById("quadrato").style.backgroundColor="green"
+        document.querySelector(`.box${i}`).style.backgroundColor="green"
         
     }
     else if(i % 3==0 && i % 5==0){
+        newP.innerHTML="fizzbuzz"
         console.log("scrivo fizzbuzz")
-        document.getElementById("quadrato").style.backgroundColor="yellow"
+        document.querySelector(`.box${i}`).style.backgroundColor="yellow"
         
     }
     else if( i % 5==0){
+        newP.innerHTML="buzz"
         console.log("scrivo fizz")
-        document.getElementById("quadrato").style.backgroundColor="red"
+        document.querySelector(`.box${i}`).style.backgroundColor="red"
         
     }
     
