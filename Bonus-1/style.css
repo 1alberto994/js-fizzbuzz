@@ -1,6 +1,7 @@
 div{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 p{
     text-align: center;
